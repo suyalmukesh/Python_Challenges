@@ -37,11 +37,11 @@ class sf_connect(snowflakeConnection):
     def connect(self):
         try:
             self.conn = snowflake.connector.connect(
-                user = self.username
-                password = self.password 
-                account = self.account
-                warehouse = self.warehouse
-                database = self.database
+                user = self.username,
+                password = self.password, 
+                account = self.account,
+                warehouse = self.warehouse,
+                database = self.database,
                 schema = self.schema)
         except Exception as e :
             print(f"Connection failed as {e}")
