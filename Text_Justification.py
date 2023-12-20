@@ -3,6 +3,7 @@ def fullJustify(words, maxWidth):
     lst = [] 
     temp = ''
 
+    reference = {}
     for word in words:
         n = len(word)
         temp = temp.lstrip()
@@ -15,7 +16,13 @@ def fullJustify(words, maxWidth):
             temp = '' 
             temp += word
     lst.append(temp)
+
+    line = 0
+    for sentence in lst:
+        line += 1
+        reference[line] = {"total":maxWidth , "left" : maxWidth - len(sentence)}
              
+    print(reference)         
             
 
 

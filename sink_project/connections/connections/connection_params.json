@@ -1,0 +1,8 @@
+{
+        "sfUrl":"",
+        "sfUser":"",
+        "sfPassword":"",
+        "sfDatabase" : "",
+        "sfSchema":"",
+        "sfWarehouse":""
+}    
