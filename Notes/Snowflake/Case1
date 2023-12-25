@@ -1,0 +1,36 @@
+## Objective 0 
+
+1. Create a Free Snowflake Account 
+2. Install Snowsql
+3. Note down the Credentials 
+
+## Objective 1 
+
+1. Create an External Stage 
+2. Create Internal Stage and other stage 
+3. Query the Stages , check the data 
+
+## Objective 2
+
+1. Create some tables in Snowflake 
+2. Copy data from Stages to Snowflake Tables 
+3. Some simple Transformation 
+
+
+## USE CASE : Load data from a complex json and load to Snowflake table 
+## Demonstrate using Chart 
+
+#### Steps  
+        1. Upload to snowflake table 
+        2. Prepare select command to parse data 
+        3. Copy this data to snowflake table 
+
+
+
+
+
+
+
+
+
+

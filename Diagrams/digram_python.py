@@ -1,6 +1,5 @@
-from diagrams.programming.language import *
+from diagrams.azure import *
 
-from diagrams.saas.analytics.Snowflake import *
 
 
 

@@ -9,3 +9,13 @@ print(spark)
 creds = read_credentials()
 
 
+
+# READ FILE 
+
+# TRANSFORMATION 
+
+# WRITE TO SINK  
+
+
+
+
