@@ -1,28 +1,20 @@
 def merge(intervals):
 
+    output = [] 
     intervals.sort()
-    output = []
-    first = intervals[0]
-    left = first[0]
-    right = first[1]
-
-    count = 1
+    left = intervals[0]
     for i in range(1,len(intervals)):
-        
-        if intervals[i][0] <= first[1]:
-            right = max(intervals[i][1],first[1])
-            left = min(intervals[i][0],first[0]) 
-                    
+
+        right = intervals[i]
+        if right[0] <= left[1]:
+            left[0] = min(left[0],right[0])
+            left[1] = max(left[1],right[1])
         else:
-            output.append([left,right])
-            first = intervals[i]
-            left = first[0]
-            right = first[1]
-        
-    
-    output.append([left,right])    
+            output.append(left)
+            left = intervals[i]
+    output.append(left)                
    
-    return output 
+    return output
 
 if __name__ == "__main__":
     intervals = [[1,3],[2,6],[8,10],[15,18]]
@@ -64,6 +56,12 @@ if __name__ == "__main__":
     
     intervals = [[1,4],[0,0]]
     Output =  [[0,0],[1,4]]
+    if merge(intervals) == Output:
+        print(f"Output : {Output} : Correct")
+    else: print(f"Output {merge(intervals)} : Not Correct") 
+
+    intervals = [[1,4],[0,2],[3,5]]
+    Output =  [[0,5]]
     if merge(intervals) == Output:
         print(f"Output : {Output} : Correct")
     else: print(f"Output {merge(intervals)} : Not Correct") 

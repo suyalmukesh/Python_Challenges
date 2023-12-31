@@ -37,7 +37,7 @@ def check_3x3(board):
     while row_group < 3:
         k = 0 
         while k < 3:
-            for i in range(row_group,k):
+            for i in range(row_group):
                 for j in range(row_group,k):
                     out.append(board[i][j])
             
