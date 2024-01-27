@@ -1,8 +1,16 @@
 {
-        "sfUrl":"",
-        "sfUser":"",
-        "sfPassword":"",
-        "sfDatabase" : "",
-        "sfSchema":"",
-        "sfWarehouse":""
-}    
+"snowflake":
+        {
+                "sfUrl":"",
+                "sfUser":"",
+                "sfPassword":"",
+                "sfDatabase" : "",
+                "sfSchema":"",
+                "sfWarehouse":""
+        },
+"aws": {
+                "Account_Id":"925950898902",
+                "Account_Name":"suyalpython",
+                "Password":"Prime35mm@22"
+        }    
+}

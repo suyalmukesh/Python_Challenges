@@ -1,0 +1,22 @@
+def isPalindrome1(x):
+
+    x = str(x)
+    return True if x == x[::-1] else False   
+
+def isPalindrome2(x):
+
+    temp = []
+    while x > 0 :
+        y = x%10
+        x = int(x/10)
+        temp.append(y)
+        print(temp)
+
+
+if __name__ == "__main__":
+    
+    inputs = [121,-121]
+    for num in inputs:
+        print(isPalindrome1(num))
+        print(isPalindrome2(num))
+
